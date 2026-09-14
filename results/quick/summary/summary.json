@@ -1,0 +1,156 @@
+{
+  "status": "measured",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "dataset": "ARC-Easy",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-0.5B",
+    "dataset_id": "allenai/ai2_arc",
+    "dataset_config": "ARC-Easy",
+    "seeds": [
+      21,
+      42,
+      87
+    ],
+    "data_seed": 2026,
+    "train_size": 512,
+    "validation_size": 128,
+    "test_size": 256,
+    "max_length": 256,
+    "steps": 128,
+    "batch_size": 4,
+    "accumulation_steps": 2,
+    "eval_batch_size": 8,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "adamw_lr": 0.0002,
+    "ivon_lr": 0.03,
+    "weight_decay": 0.0001,
+    "ess": 1000000,
+    "hess_init": 0.001,
+    "clip_radius": 0.001,
+    "beta2": 0.99999,
+    "warmup_fraction": 0.1,
+    "posterior_samples": 10,
+    "ece_bins": 15,
+    "dtype": "float32",
+    "save_checkpoints": true,
+    "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+    "dataset_revision": "210d026faf9955653af8916fad021475a3f00453",
+    "source_sha256": "8318bc20eae8eda7a87506110ebc099296399b2f36e86878b2c11c7b6a097188"
+  },
+  "n_test": 256,
+  "summary": [
+    {
+      "method": "adamw",
+      "n_seeds": 3,
+      "accuracy_mean": 0.7317708333333334,
+      "accuracy_std": 0.01761425684696443,
+      "ece_mean": 0.06886257083776097,
+      "ece_std": 0.02295398520052748,
+      "nll_mean": 0.6802947669246656,
+      "nll_std": 0.005349895135171415,
+      "brier_mean": 0.3560200665358426,
+      "brier_std": 0.003212693444887672,
+      "train_seconds_mean": 49.33212600866659,
+      "train_seconds_std": 4.339639723898434,
+      "prediction_seconds_mean": 6.798071259999991,
+      "prediction_seconds_std": 0.7192566710623854
+    },
+    {
+      "method": "ivon_mean",
+      "n_seeds": 3,
+      "accuracy_mean": 0.7213541666666666,
+      "accuracy_std": 0.002255274489021976,
+      "ece_mean": 0.06991417325722675,
+      "ece_std": 0.0028511015768071303,
+      "nll_mean": 0.68012954682396,
+      "nll_std": 0.0033377001525131027,
+      "brier_mean": 0.36487279894064045,
+      "brier_std": 0.0015826808360049217,
+      "train_seconds_mean": 51.702394855666626,
+      "train_seconds_std": 1.1124965715634987,
+      "prediction_seconds_mean": 7.20507718866664,
+      "prediction_seconds_std": 0.09370358447412842
+    },
+    {
+      "method": "ivon_mc",
+      "n_seeds": 3,
+      "accuracy_mean": 0.6940104166666666,
+      "accuracy_std": 0.013718299157360338,
+      "ece_mean": 0.17952619373184764,
+      "ece_std": 0.01486604520289987,
+      "nll_mean": 0.8835728297097547,
+      "nll_std": 0.04012369419747314,
+      "brier_mean": 0.46942846680058753,
+      "brier_std": 0.022438778059126578,
+      "train_seconds_mean": 51.702394855666626,
+      "train_seconds_std": 1.1124965715634987,
+      "prediction_seconds_mean": 71.58822776766662,
+      "prediction_seconds_std": 0.38599863150451735
+    }
+  ],
+  "paired_deltas": [
+    {
+      "method": "ivon_mean",
+      "metric": "accuracy",
+      "mean": -0.010416666666666666,
+      "std": 0.019661027175184243,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mean",
+      "metric": "ece",
+      "mean": 0.0010516024194657803,
+      "std": 0.023936068708616868,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mean",
+      "metric": "nll",
+      "mean": -0.00016522010070555795,
+      "std": 0.0024481922600696725,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mean",
+      "metric": "brier",
+      "mean": 0.008852732404797817,
+      "std": 0.003388155636339366,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mc",
+      "metric": "accuracy",
+      "mean": -0.037760416666666664,
+      "std": 0.03133127451957283,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mc",
+      "metric": "ece",
+      "mean": 0.11066362289408667,
+      "std": 0.021548370036381933,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mc",
+      "metric": "nll",
+      "mean": 0.20327806278508906,
+      "std": 0.0443484944758447,
+      "n_seeds": 3
+    },
+    {
+      "method": "ivon_mc",
+      "metric": "brier",
+      "mean": 0.11340840026474495,
+      "std": 0.025162648670105498,
+      "n_seeds": 3
+    }
+  ],
+  "note": "Mean and sample SD across seeds. Delta = IVON minus AdamW. No significance claim from three seeds."
+}

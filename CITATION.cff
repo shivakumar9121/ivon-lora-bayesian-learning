@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this student reproduction, please cite the original IVON-LoRA paper as well."
+title: "IVON-LoRA Bayesian Learning: a Qwen2.5-0.5B reproduction"
+type: software
+version: 1.0.0
+date-released: 2026-09-14
+authors:
+  - name: "Siddhu"
+  - name: "Pathlavath Shiva Kumar"
+  - name: "Gugulothu Ganesh"
+repository-code: "https://github.com/shivakumar9121/ivon-lora-bayesian-learning"
+license: MIT

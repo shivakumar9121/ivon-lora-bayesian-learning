@@ -1,0 +1,10 @@
+{
+  "extends": "quick.json",
+  "seeds": [21],
+  "train_size": 16,
+  "validation_size": 8,
+  "test_size": 8,
+  "steps": 2,
+  "posterior_samples": 2,
+  "save_checkpoints": false
+}

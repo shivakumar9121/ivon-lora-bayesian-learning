@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": [
+    "All six completed runs have 128 recorded steps",
+    "All saved test metrics recomputed from individual probabilities",
+    "Identical held-out test IDs and labels across all methods and seeds",
+    "Same initial adapter hashes within every paired seed",
+    "Packaged training source hash matches recorded Colab source hash"
+  ],
+  "source_sha256": "8318bc20eae8eda7a87506110ebc099296399b2f36e86878b2c11c7b6a097188",
+  "seeds": [
+    21,
+    42,
+    87
+  ],
+  "test_examples": 256
+}

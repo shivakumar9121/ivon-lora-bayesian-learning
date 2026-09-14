@@ -1,0 +1,39 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B",
+  "dataset_id": "allenai/ai2_arc",
+  "dataset_config": "ARC-Easy",
+  "seeds": [
+    21
+  ],
+  "data_seed": 2026,
+  "train_size": 16,
+  "validation_size": 8,
+  "test_size": 8,
+  "max_length": 256,
+  "steps": 2,
+  "batch_size": 4,
+  "accumulation_steps": 2,
+  "eval_batch_size": 8,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "adamw_lr": 0.0002,
+  "ivon_lr": 0.03,
+  "weight_decay": 0.0001,
+  "ess": 1000000,
+  "hess_init": 0.001,
+  "clip_radius": 0.001,
+  "beta2": 0.99999,
+  "warmup_fraction": 0.1,
+  "posterior_samples": 2,
+  "ece_bins": 15,
+  "dtype": "float32",
+  "save_checkpoints": false,
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "dataset_revision": "210d026faf9955653af8916fad021475a3f00453",
+  "source_sha256": "8318bc20eae8eda7a87506110ebc099296399b2f36e86878b2c11c7b6a097188"
+}

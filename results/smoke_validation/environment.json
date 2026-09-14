@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.8.0+cpu",
+  "device": "CPU",
+  "cuda": null,
+  "option_token_ids": [
+    362,
+    425,
+    356,
+    422
+  ],
+  "packages": {
+    "transformers": "4.55.4",
+    "peft": "0.17.1",
+    "ivon-opt": "0.1.3",
+    "datasets": "4.0.0",
+    "numpy": "2.3.5"
+  }
+}

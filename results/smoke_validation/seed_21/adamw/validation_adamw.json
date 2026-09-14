@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.5,
+  "ece": 0.2815294973552227,
+  "nll": 0.9880527735056523,
+  "brier": 0.5286353803002011,
+  "n": 8,
+  "ece_bins": 15,
+  "method": "adamw",
+  "split": "validation",
+  "seed": 21,
+  "prediction_seconds": 6.728805900000225,
+  "posterior_samples": 0
+}

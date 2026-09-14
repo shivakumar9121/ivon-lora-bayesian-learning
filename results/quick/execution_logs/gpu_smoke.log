@@ -1,0 +1,31 @@
+2026-09-14 18:08:58.784819: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+Generating train split:   0%|          | 0/2251 [00:00<?, ? examples/s]
+Generating train split: 100%|██████████| 2251/2251 [00:00<00:00, 97594.38 examples/s]
+
+Generating test split:   0%|          | 0/2376 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 2376/2376 [00:00<00:00, 226899.80 examples/s]
+
+Generating validation split:   0%|          | 0/570 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 570/570 [00:00<00:00, 131425.06 examples/s]
+START adamw seed=21, 2 steps, 540,672 trainable parameters
+  step 1/2 loss=0.5436
+{"accuracy": 0.5, "ece": 0.28152890130877495, "nll": 0.9880544903680987, "brier": 0.5286362554687548, "n": 8, "ece_bins": 15, "method": "adamw", "split": "validation", "seed": 21, "prediction_seconds": 0.10605379099979473, "posterior_samples": 0}
+{"accuracy": 0.5, "ece": 0.32576217502355576, "nll": 1.3349034447084704, "brier": 0.7298395171156005, "n": 8, "ece_bins": 15, "method": "adamw", "split": "test", "seed": 21, "prediction_seconds": 0.2047001559999444, "posterior_samples": 0}
+START ivon seed=21, 2 steps, 540,672 trainable parameters
+  step 1/2 loss=1.0483
+{"accuracy": 0.5, "ece": 0.2802073620259762, "nll": 0.9879469282908722, "brier": 0.5203341491693054, "n": 8, "ece_bins": 15, "method": "ivon_mean", "split": "validation", "seed": 21, "prediction_seconds": 0.0913444249999884, "posterior_samples": 0}
+  posterior draw 1/2
+  posterior draw 2/2
+{"accuracy": 0.375, "ece": 0.3212832733988762, "nll": 1.4806764996521409, "brier": 0.7639547836439735, "n": 8, "ece_bins": 15, "method": "ivon_mc", "split": "validation", "seed": 21, "prediction_seconds": 0.22626439300006496, "posterior_samples": 2}
+{"accuracy": 0.5, "ece": 0.30257365852594376, "nll": 1.2617107174458924, "brier": 0.7046320509311208, "n": 8, "ece_bins": 15, "method": "ivon_mean", "split": "test", "seed": 21, "prediction_seconds": 0.206409406000148, "posterior_samples": 0}
+  posterior draw 1/2
+  posterior draw 2/2
+{"accuracy": 0.375, "ece": 0.23039855808019638, "nll": 1.2978480770533811, "brier": 0.7048941374669082, "n": 8, "ece_bins": 15, "method": "ivon_mc", "split": "test", "seed": 21, "prediction_seconds": 0.42725280700005897, "posterior_samples": 2}
+ALL RUNS COMPLETE. Generating summary.
+
+MEASURED TEST RESULTS (mean +/- sample SD across seeds)
+adamw        accuracy %: 50.000 (one seed)   ECE pp: 32.576 (one seed)   NLL: 1.335 (one seed)
+ivon_mean    accuracy %: 50.000 (one seed)   ECE pp: 30.257 (one seed)   NLL: 1.262 (one seed)
+ivon_mc      accuracy %: 37.500 (one seed)   ECE pp: 23.040 (one seed)   NLL: 1.298 (one seed)

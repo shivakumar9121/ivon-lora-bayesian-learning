@@ -1,0 +1,146 @@
+2026-09-14 18:09:40.203857: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+START adamw seed=21, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=0.7144
+  step 16/128 loss=0.7546
+  step 32/128 loss=0.4809
+  step 48/128 loss=0.2837
+  step 64/128 loss=0.3956
+  step 80/128 loss=0.3392
+  step 96/128 loss=0.6699
+  step 112/128 loss=0.8310
+  step 128/128 loss=0.5024
+{"accuracy": 0.71875, "ece": 0.11714622424915434, "nll": 0.6842563346950943, "brier": 0.3625979275966795, "n": 128, "ece_bins": 15, "method": "adamw", "split": "validation", "seed": 21, "prediction_seconds": 2.7839358189999075, "posterior_samples": 0}
+{"accuracy": 0.71484375, "ece": 0.0798586531309411, "nll": 0.6756634080355051, "brier": 0.3578818455215429, "n": 256, "ece_bins": 15, "method": "adamw", "split": "test", "seed": 21, "prediction_seconds": 5.967887996999934, "posterior_samples": 0}
+START ivon seed=21, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=1.4008
+  step 16/128 loss=0.8772
+  step 32/128 loss=1.0522
+  step 48/128 loss=0.7879
+  step 64/128 loss=0.9591
+  step 80/128 loss=0.9953
+  step 96/128 loss=1.1031
+  step 112/128 loss=0.9946
+  step 128/128 loss=1.3560
+{"accuracy": 0.6875, "ece": 0.08854221389628947, "nll": 0.7122691584852938, "brier": 0.3818364657374181, "n": 128, "ece_bins": 15, "method": "ivon_mean", "split": "validation", "seed": 21, "prediction_seconds": 3.357400011999971, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.6796875, "ece": 0.19463012329943014, "nll": 0.8525803167308962, "brier": 0.4420393416209355, "n": 128, "ece_bins": 15, "method": "ivon_mc", "split": "validation", "seed": 21, "prediction_seconds": 35.55111749499997, "posterior_samples": 10}
+{"accuracy": 0.72265625, "ece": 0.06665145710576324, "nll": 0.6765673164097117, "brier": 0.3634274725853417, "n": 256, "ece_bins": 15, "method": "ivon_mean", "split": "test", "seed": 21, "prediction_seconds": 7.270918343999938, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.70703125, "ece": 0.1966920202565234, "nll": 0.8903707826810989, "brier": 0.4712409181777959, "n": 256, "ece_bins": 15, "method": "ivon_mc", "split": "test", "seed": 21, "prediction_seconds": 71.14270323000005, "posterior_samples": 10}
+START adamw seed=42, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=0.8992
+  step 16/128 loss=0.7325
+  step 32/128 loss=0.1574
+  step 48/128 loss=0.4067
+  step 64/128 loss=1.0828
+  step 80/128 loss=0.6284
+  step 96/128 loss=0.2657
+  step 112/128 loss=0.8981
+  step 128/128 loss=0.2789
+{"accuracy": 0.7265625, "ece": 0.14366240520030257, "nll": 0.691462918903021, "brier": 0.36318540013443545, "n": 128, "ece_bins": 15, "method": "adamw", "split": "validation", "seed": 42, "prediction_seconds": 3.4042359069999293, "posterior_samples": 0}
+{"accuracy": 0.75, "ece": 0.042479126481339335, "nll": 0.6790700701057428, "brier": 0.3523103763255736, "n": 256, "ece_bins": 15, "method": "adamw", "split": "test", "seed": 42, "prediction_seconds": 7.233826174000114, "posterior_samples": 0}
+START ivon seed=42, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=1.3028
+  step 16/128 loss=0.9134
+  step 32/128 loss=0.8421
+  step 48/128 loss=0.9889
+  step 64/128 loss=1.4264
+  step 80/128 loss=1.2937
+  step 96/128 loss=1.4368
+  step 112/128 loss=1.3523
+  step 128/128 loss=0.5741
+{"accuracy": 0.703125, "ece": 0.06559469434432687, "nll": 0.7075469084941406, "brier": 0.37826607586932565, "n": 128, "ece_bins": 15, "method": "ivon_mean", "split": "validation", "seed": 42, "prediction_seconds": 3.355674874999977, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.6640625, "ece": 0.16237069089838765, "nll": 0.9158226159821302, "brier": 0.4801723371509604, "n": 128, "ece_bins": 15, "method": "ivon_mc", "split": "validation", "seed": 42, "prediction_seconds": 33.854553475999865, "posterior_samples": 10}
+{"accuracy": 0.71875, "ece": 0.0711650149896741, "nll": 0.6806366415583528, "brier": 0.36462687943020056, "n": 256, "ece_bins": 15, "method": "ivon_mean", "split": "test", "seed": 42, "prediction_seconds": 7.0977989049999906, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.6796875, "ece": 0.17093329206545602, "nll": 0.9198632940440523, "brier": 0.49090605280236993, "n": 256, "ece_bins": 15, "method": "ivon_mc", "split": "test", "seed": 42, "prediction_seconds": 71.82220869399998, "posterior_samples": 10}
+START adamw seed=87, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=0.3886
+  step 16/128 loss=0.5769
+  step 32/128 loss=0.7196
+  step 48/128 loss=0.6032
+  step 64/128 loss=0.5744
+  step 80/128 loss=0.1141
+  step 96/128 loss=0.2957
+  step 112/128 loss=0.3448
+  step 128/128 loss=0.1021
+{"accuracy": 0.7421875, "ece": 0.05856407061219219, "nll": 0.6719006575819717, "brier": 0.3541939210633166, "n": 128, "ece_bins": 15, "method": "adamw", "split": "validation", "seed": 87, "prediction_seconds": 3.4056327079999846, "posterior_samples": 0}
+{"accuracy": 0.73046875, "ece": 0.08424993290100244, "nll": 0.686150822632749, "brier": 0.35786797776041146, "n": 256, "ece_bins": 15, "method": "adamw", "split": "test", "seed": 87, "prediction_seconds": 7.192499608999924, "posterior_samples": 0}
+START ivon seed=87, 128 steps, 540,672 trainable parameters
+  step 1/128 loss=1.0635
+  step 16/128 loss=1.1387
+  step 32/128 loss=1.3223
+  step 48/128 loss=0.8488
+  step 64/128 loss=1.1734
+  step 80/128 loss=0.5718
+  step 96/128 loss=1.1502
+  step 112/128 loss=0.8986
+  step 128/128 loss=0.6433
+{"accuracy": 0.6953125, "ece": 0.07521563465707005, "nll": 0.7089476746717789, "brier": 0.38019513991509324, "n": 128, "ece_bins": 15, "method": "ivon_mean", "split": "validation", "seed": 87, "prediction_seconds": 3.401383499000076, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.6796875, "ece": 0.20790926191839396, "nll": 0.9160518774835349, "brier": 0.47933481889051666, "n": 128, "ece_bins": 15, "method": "ivon_mc", "split": "validation", "seed": 87, "prediction_seconds": 34.28089556200007, "posterior_samples": 10}
+{"accuracy": 0.72265625, "ece": 0.07192604767624287, "nll": 0.6831846825038157, "brier": 0.36656404480637916, "n": 256, "ece_bins": 15, "method": "ivon_mean", "split": "test", "seed": 87, "prediction_seconds": 7.246514316999992, "posterior_samples": 0}
+  posterior draw 1/10
+  posterior draw 2/10
+  posterior draw 3/10
+  posterior draw 4/10
+  posterior draw 5/10
+  posterior draw 6/10
+  posterior draw 7/10
+  posterior draw 8/10
+  posterior draw 9/10
+  posterior draw 10/10
+{"accuracy": 0.6953125, "ece": 0.1709532688735635, "nll": 0.8404844124041128, "brier": 0.446138429421597, "n": 256, "ece_bins": 15, "method": "ivon_mc", "split": "test", "seed": 87, "prediction_seconds": 71.79977137899982, "posterior_samples": 10}
+ALL RUNS COMPLETE. Generating summary.
+
+MEASURED TEST RESULTS (mean +/- sample SD across seeds)
+adamw        accuracy %: 73.177 +/- 1.761   ECE pp: 6.886 +/- 2.295   NLL: 0.680 +/- 0.005
+ivon_mean    accuracy %: 72.135 +/- 0.226   ECE pp: 6.991 +/- 0.285   NLL: 0.680 +/- 0.003
+ivon_mc      accuracy %: 69.401 +/- 1.372   ECE pp: 17.953 +/- 1.487   NLL: 0.884 +/- 0.040

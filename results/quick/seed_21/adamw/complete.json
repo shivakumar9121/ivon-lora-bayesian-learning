@@ -1,0 +1,39 @@
+{
+  "seed": 21,
+  "optimizer": "adamw",
+  "initial_adapter_sha256": "857423317356a21b384ab0b658ad15ae28d40e8d7bb7235c5a1c7880dabaeb3d",
+  "trainable_parameters": 540672,
+  "total_parameters": 494573440,
+  "train_seconds": 44.32269438100002,
+  "peak_train_memory_gib": 2.9586710929870605,
+  "steps": 128,
+  "status": "measured",
+  "results": [
+    {
+      "accuracy": 0.71875,
+      "ece": 0.11714622424915434,
+      "nll": 0.6842563346950943,
+      "brier": 0.3625979275966795,
+      "n": 128,
+      "ece_bins": 15,
+      "method": "adamw",
+      "split": "validation",
+      "seed": 21,
+      "prediction_seconds": 2.7839358189999075,
+      "posterior_samples": 0
+    },
+    {
+      "accuracy": 0.71484375,
+      "ece": 0.0798586531309411,
+      "nll": 0.6756634080355051,
+      "brier": 0.3578818455215429,
+      "n": 256,
+      "ece_bins": 15,
+      "method": "adamw",
+      "split": "test",
+      "seed": 21,
+      "prediction_seconds": 5.967887996999934,
+      "posterior_samples": 0
+    }
+  ]
+}

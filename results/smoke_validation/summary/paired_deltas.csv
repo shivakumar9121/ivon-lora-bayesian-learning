@@ -1,0 +1,9 @@
+method,metric,mean,std,n_seeds
+ivon_mean,accuracy,0.0,,1
+ivon_mean,ece,-0.022470220923423767,,1
+ivon_mean,nll,-0.07112158467527685,,1
+ivon_mean,brier,-0.024290262502874915,,1
+ivon_mc,accuracy,-0.125,,1
+ivon_mc,ece,0.033481485210359097,,1
+ivon_mc,nll,-0.08566814541334655,,1
+ivon_mc,brier,-0.025986410937618665,,1

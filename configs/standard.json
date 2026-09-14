@@ -1,0 +1,7 @@
+{
+  "extends": "quick.json",
+  "train_size": 1024,
+  "validation_size": 256,
+  "test_size": 512,
+  "steps": 256
+}

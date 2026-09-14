@@ -1,0 +1,89 @@
+{
+  "data_seed": 2026,
+  "splits": {
+    "train": {
+      "original_count": 2251,
+      "eligible_count": 2241,
+      "excluded": {
+        "invalid_or_non_four_choice": 10
+      },
+      "selected_count": 16,
+      "ids": [
+        "Mercury_7268170",
+        "Mercury_7164605",
+        "Mercury_SC_413533",
+        "Mercury_SC_400591",
+        "TIMSS_2007_4_pg43",
+        "VASoL_2011_5_35",
+        "Mercury_7228235",
+        "NCEOGA_2013_5_S1",
+        "Mercury_182140",
+        "Mercury_SC_401676",
+        "AKDE&ED_2012_4_46",
+        "Mercury_7263113",
+        "Mercury_SC_409152",
+        "MSA_2012_5_44",
+        "Mercury_7041073",
+        "ACTAAP_2008_5_2"
+      ],
+      "label_counts": {
+        "1": 4,
+        "3": 4,
+        "0": 5,
+        "2": 3
+      },
+      "sha256": "3628ea33e8b67ad0d20ab396849cf0e6182496dc9a1ac5fb0d1eff6d11b3265c"
+    },
+    "validation": {
+      "original_count": 570,
+      "eligible_count": 567,
+      "excluded": {
+        "invalid_or_non_four_choice": 3
+      },
+      "selected_count": 8,
+      "ids": [
+        "Mercury_SC_400037",
+        "Mercury_SC_400002",
+        "TIMSS_2007_4_pg81",
+        "Mercury_7213378",
+        "MDSA_2010_4_7",
+        "TIMSS_2011_4_pg76",
+        "Mercury_7064050",
+        "Mercury_7249970"
+      ],
+      "label_counts": {
+        "1": 3,
+        "0": 2,
+        "2": 1,
+        "3": 2
+      },
+      "sha256": "e6952d87a1347fef46196de2a7f81a7107f364aca97f2253dd3e8dbfc344e5d1"
+    },
+    "test": {
+      "original_count": 2376,
+      "eligible_count": 2365,
+      "excluded": {
+        "invalid_or_non_four_choice": 11
+      },
+      "selected_count": 8,
+      "ids": [
+        "Mercury_SC_400676",
+        "Mercury_SC_LBS10026",
+        "MCAS_2012_5_22237",
+        "Mercury_416539",
+        "Mercury_7007770",
+        "Mercury_7216720",
+        "Mercury_SC_410835",
+        "Mercury_7213483"
+      ],
+      "label_counts": {
+        "2": 5,
+        "0": 1,
+        "3": 2
+      },
+      "sha256": "061f5fec5abb602c87fadf4b8070d669cdab55c0de842b6ae7a0eed46fe67f11"
+    }
+  },
+  "dataset_id": "allenai/ai2_arc",
+  "dataset_revision": "210d026faf9955653af8916fad021475a3f00453"
+}

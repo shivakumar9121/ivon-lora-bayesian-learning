@@ -1,0 +1,65 @@
+{
+  "seed": 21,
+  "optimizer": "ivon",
+  "initial_adapter_sha256": "6419c5a919f2c88c3eca695e18900c4bd5581aa8a529e0630b64bbaa81b85c99",
+  "trainable_parameters": 540672,
+  "total_parameters": 494573440,
+  "train_seconds": 37.06105360000038,
+  "peak_train_memory_gib": null,
+  "steps": 2,
+  "status": "measured",
+  "results": [
+    {
+      "accuracy": 0.5,
+      "ece": 0.2802850902080536,
+      "nll": 0.986997062795654,
+      "brier": 0.5200714170072775,
+      "n": 8,
+      "ece_bins": 15,
+      "method": "ivon_mean",
+      "split": "validation",
+      "seed": 21,
+      "prediction_seconds": 6.710490100000243,
+      "posterior_samples": 0
+    },
+    {
+      "accuracy": 0.5,
+      "ece": 0.34411587193608284,
+      "nll": 1.491107491416105,
+      "brier": 0.7592511648147464,
+      "n": 8,
+      "ece_bins": 15,
+      "method": "ivon_mc",
+      "split": "validation",
+      "seed": 21,
+      "prediction_seconds": 14.324644799999078,
+      "posterior_samples": 2
+    },
+    {
+      "accuracy": 0.5,
+      "ece": 0.30329079180955887,
+      "nll": 1.2637745936152012,
+      "brier": 0.7055462030623401,
+      "n": 8,
+      "ece_bins": 15,
+      "method": "ivon_mean",
+      "split": "test",
+      "seed": 21,
+      "prediction_seconds": 12.450103299999682,
+      "posterior_samples": 0
+    },
+    {
+      "accuracy": 0.375,
+      "ece": 0.35924249794334173,
+      "nll": 1.2492280328771315,
+      "brier": 0.7038500546275963,
+      "n": 8,
+      "ece_bins": 15,
+      "method": "ivon_mc",
+      "split": "test",
+      "seed": 21,
+      "prediction_seconds": 24.23706300000049,
+      "posterior_samples": 2
+    }
+  ]
+}

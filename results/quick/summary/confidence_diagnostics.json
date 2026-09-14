@@ -1,0 +1,29 @@
+[
+  {
+    "method": "adamw",
+    "mean_confidence_across_seeds": 0.7938094672281295,
+    "per_seed_mean_confidence": [
+      0.7913958969293162,
+      0.7924791264813393,
+      0.797553378273733
+    ]
+  },
+  {
+    "method": "ivon_mean",
+    "mean_confidence_across_seeds": 0.7167493794113398,
+    "per_seed_mean_confidence": [
+      0.7225270854542032,
+      0.7135522002354264,
+      0.7141688525443897
+    ]
+  },
+  {
+    "method": "ivon_mc",
+    "mean_confidence_across_seeds": 0.5213357268751376,
+    "per_seed_mean_confidence": [
+      0.5144287934326712,
+      0.5092650458405843,
+      0.5403133413521573
+    ]
+  }
+]
