@@ -1,3 +1,7 @@
+**START HERE: [Download the completed project, measured results and updated slides](IVON_LoRA_Project_Completed.zip).**
+
+This completed ZIP includes the executed T4 notebook, source code, all seed predictions and logs, comparison and training plots, eleven-slide presentation, and professor viva guide.
+
 # Variational Low-Rank Adaptation Using IVON
 
 **Bayesian Learning project — completed Qwen2.5-0.5B experiment**
